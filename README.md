@@ -1,5 +1,5 @@
 # Instructions
-
+*Ensure you have some sample PDFs datasheets in the same directory as the .py*
 ## Install 
 `pip install -r requirements.txt`
 
