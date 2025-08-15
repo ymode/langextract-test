@@ -1,5 +1,12 @@
 # Instructions
 *Ensure you have some sample PDFs datasheets in the same directory as the .py*
+
+## Environment Variables
+You need to set your OpenAI API key:
+```bash
+export OPENAI_API_KEY="your-api-key-here"
+```
+
 ## Install 
 `pip install -r requirements.txt`
 

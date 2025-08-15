@@ -35,8 +35,8 @@ example = ExampleData(
 config = ModelConfig(model_id="gpt-4o", provider="openai")
 
 # List of PDF files to process
-# Discover PDF files in the data directory
-pdf_files = glob.glob("/workspaces/codespaces-blank/data/*.pdf")
+# Discover PDF files in the current directory
+pdf_files = glob.glob("*.pdf")
 
 # Recursively convert objects to dicts for JSON serialization
 def to_serializable(obj):
@@ -116,7 +116,7 @@ def main():
             json_results.append({"file": pdf_path, "extraction": None, "error": "No text extracted."})
 
     # Write results to a JSON file
-    out_path = "/workspaces/codespaces-blank/data/langextract_output.json"
+    out_path = "langextract_output.json"
     with open(out_path, "w") as f:
         json.dump(json_results, f, indent=2)
     print(f"Wrote results to {out_path}")
