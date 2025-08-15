@@ -1,0 +1,10 @@
+# Minimal dependencies for the sample langextract script
+
+# Core langextract package (with OpenAI integration extra) and runtime
+langextract[openai]
+
+# OpenAI python client (explicitly listed for clarity)
+openai
+
+# PDF text extraction
+PyPDF2
