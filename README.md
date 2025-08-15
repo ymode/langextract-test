@@ -1,3 +1,11 @@
+# Instructions
+
+## Install 
+`pip install -r requirements.txt`
+
+## Run
+`python sample_langextract.py`
+
 # Use
 
 run with pdfs in the same directory and structured `.json` output will be generated:
